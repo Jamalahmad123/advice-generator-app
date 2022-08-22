@@ -1,0 +1,149 @@
+/* CUSTOM PROPERTIES */
+:root {
+  /* ## Colors */
+
+  /* ### Primary  */
+
+  --Light-Cyan: hsl(193, 38%, 86%);
+  --Neon-Green: hsl(150, 100%, 66%);
+
+  /* #-# Neutral */
+
+  --Grayish-Blue: hsl(217, 19%, 38%);
+  --Dark-Grayish-Blue: hsl(217, 19%, 24%);
+  --Dark-Blue: hsl(218, 23%, 16%);
+
+  /* ## Typography */
+  /* ### Body Copy */
+
+  --Font-size-quote-: 28px;
+}
+
+/* General Styles */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  background-color: var(--Dark-Blue);
+  color: var(--Light-Cyan);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 0 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+p,
+span,
+button {
+  font-size: 1.6rem;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.flex-center-col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container {
+  background-color: var(--Dark-Grayish-Blue);
+  max-width: 40rem;
+  width: 100%;
+  gap: 2rem;
+  margin: 0 auto;
+  padding: 3rem;
+  border-radius: 1rem;
+  position: relative;
+}
+
+.advice {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: var(--Neon-Green);
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+}
+
+.advice .advice-id {
+  margin-left: 0.4rem;
+}
+
+.advice-container .advice-content {
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.pattren {
+  margin-bottom: 3rem;
+}
+
+.btn {
+  display: inline-block;
+  background-color: var(--Neon-Green);
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  padding: 1.5rem;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.loader {
+  position: absolute;
+  border: 16px solid #f3f3f3;
+  border-top: 16px solid #333;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media only screen and (min-width: 450px) {
+  .container {
+    max-width: 45rem;
+    padding: 4rem;
+  }
+
+  .advice-container .advice-content {
+    font-size: 2.2rem;
+    font-weight: 800;
+  }
+}

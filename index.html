@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <!-- font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <!-- css link -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- JS Link -->
+    <script defer src="app.js"></script>
+
+    <title>Frontend Mentor | Advice generator app</title>
+  </head>
+  <body>
+    <!-- main container -->
+    <main class="container flex-center-col">
+      <!-- header -->
+      <header>
+        <h1 class="advice">
+          advice
+          <span class="advice-id">#117</span>
+        </h1>
+      </header>
+
+      <!-- advice -->
+      <div class="advice-container">
+        <p class="advice-content">
+          "It is easy to sit up and take notice, What's difficult is getting up
+          and taking action."
+        </p>
+      </div>
+
+      <!-- Pattren Divider -->
+      <div class="pattren">
+        <img
+          src="./images/pattern-divider-desktop.svg"
+          alt=""
+          pattern-divider-desktop
+          class="pattren-img"
+        />
+      </div>
+
+      <!-- button dice -->
+      <button class="btn">
+        <img src="./images/icon-dice.svg" alt="icon-dice" class="icon-dice" />
+      </button>
+    </main>
+
+    <!-- loader -->
+    <div class="loader" id="loader"></div>
+  </body>
+</html>
